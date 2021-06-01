@@ -1,0 +1,45 @@
+.center {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+  overflow-y: hidden;
+  opacity: 0.8;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* font-weight: bolder; */
+}
+.center .staff{
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #CC9455;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 4px 24px;
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.center .student{
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #528efc;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 4px 24px;
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}

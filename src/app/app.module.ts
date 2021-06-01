@@ -12,6 +12,8 @@ import { FormsModule } from "@angular/forms";
   import { MatInputModule } from "@angular/material/input";
   import { MatButtonModule } from "@angular/material/button";
   import { MatFormFieldModule } from "@angular/material/form-field";
+  import { MatToolbarModule } from "@angular/material/toolbar";
+  import { MatIconModule } from "@angular/material/icon";
 
 
 import { environment } from "../environments/environment";
@@ -22,13 +24,17 @@ import { RegisterComponent } from './pages/register/register.component';
 import { UsersComponent } from './pages/users/users.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { importExpr } from '@angular/compiler/src/output/output_ast';
+import { AdminComponent } from './admin/admin.component';
+import { IotComponent } from './iot/iot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    UsersComponent
+    UsersComponent,
+    AdminComponent,
+    IotComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,9 @@ import { importExpr } from '@angular/compiler/src/output/output_ast';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
