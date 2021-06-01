@@ -1,8 +1,8 @@
-<h2>LOG IN  PAGE</h2>
+<!-- <h2>LOG IN  PAGE</h2>
 <form class="example-form">
   <form (ngSubmit)="login()">
   <mat-form-field class="example-full-width">
-    <!-- <mat-label>Favorite food</mat-label> -->
+
     <input type="email" name="email" matInput [(ngModel)]="email"  placeholder="Enter Email Id" required>
   </mat-form-field>
 <br>
@@ -13,7 +13,40 @@
 </form>
 
 
-<button mat-raised-button color="primary">Submit</button>
+<button class="btn btn-danger">Submit</button>
 <br>
 <a href="register">New Register</a>
+ -->
 
+
+
+ <div class="container">
+  <div class="row justify-content-center p-4">
+
+      <div class="col-md-6">
+          <form (ngSubmit)="login()">
+          <h3>Firebase Login</h3>
+          <div class="form-group p-2">
+          <input type="email" name="email" class="form-control" [(ngModel)]="email" placeholder="Enter email Id" required>
+      </div>
+      <div class="form-group p-2">
+          <input type="password" name="password" class="form-control" [(ngModel)]="password" placeholder="Enter Password" required>
+      </div>
+      <div class="form-group p-2">
+          <button type="submit" class="btn btn-primary">Login</button>
+          <div class="register"><a href="#" routerLink="/register">New User Register</a></div>
+      </div>
+      </form>
+      <div class="form-group">
+          <p *ngIf="errorMessage.length > 0" class="text-danger">
+              {{errorMessage}}</p>
+
+          <p *ngIf="error.message.length > 0" class="text-danger">
+              {{error.message}} </p>
+
+
+      </div>
+      </div>
+
+  </div>
+</div>

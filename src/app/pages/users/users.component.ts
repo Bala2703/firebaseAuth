@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from "@angular/router";
+import { AuthService } from "../../services/auth.service";
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public authservice: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }

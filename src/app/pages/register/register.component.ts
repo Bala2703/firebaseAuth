@@ -51,11 +51,13 @@ if(this.password.length === 0)
   this.errorMessage="plz enter password" ;
   return false;
 }
+
 if(this.password.length<6)
 {
   this.errorMessage="password should be atleast 6 characters" ;
   return false;
 }
+
 this.errorMessage='';
 return true;
 
