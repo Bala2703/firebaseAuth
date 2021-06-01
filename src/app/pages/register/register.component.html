@@ -1,0 +1,20 @@
+<h3>FIREBASE REGISTER</h3>
+
+<form class="example-form">
+  <form (ngSubmit)="register()">
+  <mat-form-field class="example-full-width">
+    <!-- <mat-label>Favorite food</mat-label> -->
+    <input type="email" name="email" matInput [(ngModel)]="email"  placeholder="Enter Username" required>
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width">
+    <input type="password" name="password" [(ngModel)]="password" matInput placeholder="Enter Password" required>
+    </mat-form-field>
+  </form>
+</form>
+<p *ngIf="errorMessage.length > 0">{{errorMessage}}</p>
+<p *ngIf="error.message.length > 0">{{error.message}}</p>
+
+<button mat-raised-button color="primary">register</button>
+<br>
+<a href="login">Back to LoginPage</a>

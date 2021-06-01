@@ -1,0 +1,19 @@
+<h2>LOG IN  PAGE</h2>
+<form class="example-form">
+  <form (ngSubmit)="login()">
+  <mat-form-field class="example-full-width">
+    <!-- <mat-label>Favorite food</mat-label> -->
+    <input type="email" name="email" matInput [(ngModel)]="email"  placeholder="Enter Email Id" required>
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width">
+    <input type="password" name="password" [(ngModel)]="password" matInput placeholder="Enter Password" required>
+    </mat-form-field>
+  </form>
+</form>
+
+
+<button mat-raised-button color="primary">Submit</button>
+<br>
+<a href="register">New Register</a>
+
