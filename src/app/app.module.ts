@@ -26,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { importExpr } from '@angular/compiler/src/output/output_ast';
 import { AdminComponent } from './admin/admin.component';
 import { IotComponent } from './iot/iot.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { IotComponent } from './iot/iot.component';
     RegisterComponent,
     UsersComponent,
     AdminComponent,
-    IotComponent
+    IotComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { IotComponent } from './iot/iot.component';
     MatButtonModule,
     MatFormFieldModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    AngularTiltModule
   ],
   providers: [],
   bootstrap: [AppComponent]
