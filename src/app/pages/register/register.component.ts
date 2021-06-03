@@ -32,10 +32,10 @@ register()
   {
     this.authService.registerWithEmail(this. email, this.password).then(()=>{
       this.message="you are registered"
-        this.router.navigate(['/users'])
+        this.router.navigate(['/welcome'])
 }).catch((_error: { name: string; message: string; }) =>{
   this.error = _error
-  this.router.navigate(['/user'])
+  this.router.navigate(['/welcome'])
 })
 }
 }
