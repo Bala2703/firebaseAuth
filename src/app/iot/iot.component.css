@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   /* font-weight: bolder; */
 }
 .center .staff{
@@ -43,3 +44,4 @@
   border-radius: 5px;
   text-align: center;
 }
+
